@@ -10,6 +10,7 @@ Simple calculator inspired by the Samsung calculator
 - Performing calculations with floating-point numbers
 - Deleting a single character
 - Operations within parentheses
+- The possibility of operating using a keyboard
 
 ## Technologies
 
