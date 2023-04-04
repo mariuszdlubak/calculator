@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Calculator inspired by the Samsung calculator</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="calculator">
+                <div class="screen">
+                    <div id="history"></div>
+                    <div id="preview"></div>
+                    <button class="material-symbols-outlined" id="backspace" onclick="deleteLast()">backspace</button>
+                </div>
+                <button class="data clear" id="delete" onclick="deleteAll()">C</button>
+                <button class="data operator" id='bracket' onclick="bracket()">( )</button>
+                <button class="data operator" id='percent' onclick="percent()">%</button>
+                <button class="data operator" id='division' onclick="operator('/')">/</button>
+                <button class="data" id='7' onclick="button(this.id)">7</button>
+                <button class="data" id='8' onclick="button(this.id)">8</button>
+                <button class="data" id='9' onclick="button(this.id)">9</button>
+                <button class="data operator" id='multiplication' onclick="operator('*')">+</button>
+                <button class="data" id='4' onclick="button(this.id)">4</button>
+                <button class="data" id='5' onclick="button(this.id)">5</button>
+                <button class="data" id='6' onclick="button(this.id)">6</button>
+                <button class="data operator" id='minus' onclick="operator('-')">-</button>
+                <button class="data" id='1' onclick="button(this.id)">1</button>
+                <button class="data" id='2' onclick="button(this.id)">2</button>
+                <button class="data" id='3' onclick="button(this.id)">3</button>
+                <button class="data operator" id='plus' onclick="operator('+')">+</button>
+                <button class="data" onclick="changeOperator()">+/-</button>
+                <button class="data" id='0' onclick="button(this.id)">0</button>
+                <button class="data" id='point' onclick="point()">,</button>
+                <button class="data calculate" id='calculate' onclick="calculate()">=</button>
+                <span class="author">&copy;2023 Mariusz Dłubak. All rights reserved</span>
+            </div>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
