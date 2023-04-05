@@ -19,6 +19,7 @@ main {
 
 .calculator {
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: repeat(10, 1fr);
