@@ -121,6 +121,7 @@ const changeOperator = () => {
         data += '(-';
         bracketOpen++;
         operatorCounter++;
+        lastOperator = true;
     }
     formatData();
 }
