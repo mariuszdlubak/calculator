@@ -227,13 +227,16 @@ const calculate = () => {
             history.innerHTML = '<span class="out">' + result + '</span>';
             data = "" + result;
             operatorCounter = 0;
-            if(resultData < 0) {
-                operatorCounter++;
-            }
             lastOperator = false;
             pointInLastNumber = result.includes(',');
             bracketOpen = 0;
             lastNumber = result;
+            if(resultData < 0) {
+                operatorCounter++;
+                lastNumber = '(' + result;
+                data = '(' + result;
+                bracketOpen++;
+            }
         }
     }
     previewArea.innerHTML = "";
