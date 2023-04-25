@@ -132,6 +132,7 @@ const deleteAll = () => {
     lastOperator = false;
     bracketOpen = 0;
     pointInLastNumber = false;
+    lastNumber = "";
     history.innerHTML = "";
     previewArea.innerText = "";
 }
@@ -232,6 +233,7 @@ const calculate = () => {
             lastOperator = false;
             pointInLastNumber = result.includes(',');
             bracketOpen = 0;
+            lastNumber = result;
         }
     }
     previewArea.innerHTML = "";
