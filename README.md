@@ -2,6 +2,8 @@
 
 Simple calculator inspired by the Samsung calculator
 
+:link: [Live](https://mariuszdlubak.github.io/calculator/)
+
 ## Features
 
 - Clear, simple interface
